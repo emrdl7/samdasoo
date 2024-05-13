@@ -2451,7 +2451,7 @@ body div#content.main section.main-contents div.container div.notice ul li a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 34px;
+    line-height: 32px;
   }
 }
 body div#content.main section.main-contents div.container div.notice ul li a i {
