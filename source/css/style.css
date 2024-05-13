@@ -611,115 +611,42 @@ button {
 }
 
 /* default btn */
-.btn {
-  display: inline-block;
-  vertical-align: baseline;
-  outline: none;
-  border: 1px solid #999;
-  background: #E9E9E9;
-  line-height: 46px;
-  padding: 0 20px;
-  margin: 0 2px 4px;
-  font-size: 18px;
-  color: #555;
-  font-weight: 500;
-}
-@media (min-width: 1200px) {
-  .btn {
-    line-height: 52px;
-    font-size: 20px;
-    min-width: 140px;
-  }
-}
-.btn.main {
-  background: #5680CC;
-  border: 1px solid #2C4988;
-  color: #fff;
-  border-color: transparent;
-}
-.btn.sub {
-  background: #1f222d;
-  color: #fff;
-  border-color: transparent;
-}
-.btn.btn-ms {
-  line-height: 26px;
-  font-size: 13px;
-  padding: 0 15px;
-}
-.btn.btn-xs {
-  line-height: 20px;
-  font-size: 12px;
-  padding: 0 10px;
-}
-.btn u {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0 0 0 4px;
-  opacity: 0.8;
-  font-size: 0.8em;
-  font-weight: 200;
-}
-.btn i {
-  position: relative;
-  top: 2px;
-  margin: 0 4px 0 0;
-  font-size: 16px;
-}
-
-.btn-set {
-  margin: 20px 0;
+.button-set {
+  text-align: center;
+  margin: 34px auto 40px;
   font-size: 0;
 }
-.btn-set.center {
-  text-align: center;
-}
-.btn-set.right {
-  text-align: right;
-}
-.btn-set.big .btn {
-  line-height: 46px;
-  padding: 0 20px;
-  min-width: 140px;
-  font-size: 16px;
-}
 @media (min-width: 1200px) {
-  .btn-set.big .btn {
-    line-height: 60px;
-    padding: 0 50px;
-    font-size: 20px;
-    min-width: 160px;
+  .button-set {
+    margin: 40px auto;
   }
 }
-.btn-set.full .btn {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .btn-set.full .btn {
-    width: auto;
-    min-width: 200px;
-  }
-}
-.btn-set.align div {
+.button-set a,
+.button-set button {
   display: inline-block;
-  width: 100%;
   vertical-align: top;
-  text-align: center;
+  font-size: 18px;
+  margin: 0 5px;
+  font-weight: 700;
+  color: #fff;
+  background: #777777;
+  border-radius: 10px;
+  padding: 0 60px;
+  line-height: 56px;
+  border: none;
 }
 @media (min-width: 1200px) {
-  .btn-set.align div {
-    width: 50%;
+  .button-set a,
+  .button-set button {
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 0 65px;
+    line-height: 74px;
   }
 }
-@media (min-width: 1200px) {
-  .btn-set.align div.left {
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  .btn-set.align div.right {
-    text-align: right;
-  }
+.button-set a.main,
+.button-set button.main {
+  background: #1276C0;
 }
 
 /* Modal */
@@ -2709,7 +2636,231 @@ body div#content.sub h4.stitle {
   }
 }
 body div#content.sub section.sub-contents {
-  padding: 40px 0;
+  padding: 30px 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents {
+    padding: 50px 0;
+  }
+}
+body div#content.sub section.sub-contents.login {
+  padding: 80px 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login {
+    padding: 170px 0;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.login {
+  max-width: 710px;
+  margin: 0 auto;
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset {
+  border: 1px solid #E4E4E4;
+  background: #fff;
+  padding: 30px 30px 20px;
+  margin: 0;
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset legend {
+  display: none;
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset label {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset label u {
+  display: block;
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #1276C0;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.login fieldset label u {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset input[type=text],
+body div#content.sub section.sub-contents.login div.container div.login fieldset input[type=password] {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 0 34px;
+  padding: 0 20px;
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset button,
+body div#content.sub section.sub-contents.login div.container div.login fieldset a {
+  display: block;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background: #E7E7E7;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.login fieldset button,
+  body div#content.sub section.sub-contents.login div.container div.login fieldset a {
+    margin-bottom: 20px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.login fieldset button.submit,
+body div#content.sub section.sub-contents.login div.container div.login fieldset a.submit {
+  background: #1276C0;
+  color: #fff;
+}
+body div#content.sub section.sub-contents.login div.container div.login p.info-text {
+  background: #EEEEEE;
+  border: 1px solid #E7E7E7;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #555;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.login p.info-text {
+    padding: 48px;
+    font-size: 24px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.login p.info-text span {
+  display: block;
+}
+body div#content.sub section.sub-contents.sign div.container div.box {
+  max-width: 710px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E4E4E4;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset {
+  margin: 0;
+  border: 1px solid #E4E4E4;
+  background: #fff;
+  padding: 30px 30px 10px;
+  border-bottom: none;
+  font-size: 0;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset legend {
+  display: none;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset h5 {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset label {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset label u {
+  display: block;
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #1276C0;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset label u {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+  }
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text],
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text],
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password] {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text].wbtn,
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password].wbtn {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 102px);
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text].wbtn,
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password].wbtn {
+    width: calc(100% - 142px);
+  }
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text]:-moz-read-only, body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password]:-moz-read-only {
+  background: #F4F4F4;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=text]:read-only,
+body div#content.sub section.sub-contents.sign div.container div.box fieldset input[type=password]:read-only {
+  background: #F4F4F4;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset button.check {
+  display: block;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background: #2E2E2F;
+  color: #fff;
+}
+body div#content.sub section.sub-contents.sign div.container div.box fieldset button.check.winput {
+  display: inline-block;
+  vertical-align: top;
+  width: 92px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.sign div.container div.box fieldset button.check.winput {
+    width: 132px;
+  }
+}
+body div#content.sub section.sub-contents.sign div.container p.checkbox {
+  position: relative;
+  margin: 20px auto;
+  padding: 0 0 0 34px;
+  max-width: 710px;
+  font-size: 16px;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents.sign div.container p.checkbox input {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ccc;
 }
 @media (min-width: 1200px) {
   body div#content.sub aside + h4 + section.sub-contents div.container {
