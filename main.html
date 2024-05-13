@@ -85,7 +85,6 @@
         <div id="content" class="main">
 
             <section class="main-issue">
-                <div class="container">
 
                     <h3>
                         <span>제주삼다수 이제,</span>
@@ -93,7 +92,6 @@
                     </h3>
 
                     <a href="">주문하러가기</a>
-                </div>
 
             </section>
 
@@ -104,7 +102,7 @@
                     <h3>최근 주문내역 <a href="">더보기 <i class='bx bx-plus'></i></a></h3>
     
                     <ul>
-                        <li class="status01">
+                        <li class="status01 ok">
                             <a href="">
                                 주문번호 #20240422000001 <i class='bx bx-chevron-right' ></i>
                             </a>
@@ -117,7 +115,7 @@
                             <strong>주문완료</strong>
     
                             <p>납품처 <u>인포마인드</u></p>
-                            <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
+                            <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
     
                             <p class="date">납기일자 <u>2024-04-19</u></p>
                         </li>
@@ -178,75 +176,89 @@
 
                     <div class="off-day">
 
-                        <h3>배송휴무일 <small>1달 이내</small></h3>
+                        <h3>배송휴무일 <small>(1달 이내)</small></h3>
 
-                        <table class="calendar">
-                            <thead>
-                                <tr>
-                                    <th>일</th>
-                                    <th>월</th>
-                                    <th>화</th>
-                                    <th>수</th>
-                                    <th>목</th>
-                                    <th>금</th>
-                                    <th>토</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span>1</span></td>
-                                    <td><span>2</span></td>
-                                    <td><span>3</span></td>
-                                    <td><span>4</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span>5</span></td>
-                                    <td><span>6</span></td>
-                                    <td><span>7</span></td>
-                                    <td><span>8</span></td>
-                                    <td><span>9</span></td>
-                                    <td><span>10</span></td>
-                                    <td><span>11</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span>12</span></td>
-                                    <td><span>13</span></td>
-                                    <td><span>14</span></td>
-                                    <td><span>15</span></td>
-                                    <td><span>16</span></td>
-                                    <td><span>17</span></td>
-                                    <td><span>18</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span>19</span></td>
-                                    <td><span>20</span></td>
-                                    <td><span>21</span></td>
-                                    <td><span>22</span></td>
-                                    <td><span>23</span></td>
-                                    <td><span>24</span></td>
-                                    <td><span>25</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span>26</span></td>
-                                    <td><span>27</span></td>
-                                    <td><span>28</span></td>
-                                    <td><span>29</span></td>
-                                    <td><span>30</span></td>
-                                    <td><span>31</span></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="off-outline">
 
-                        <div>
-                            <p>임시휴무 <i>2024-05-04</i></p>
-                            <p>임시휴무 <i>2024-05-04</i></p>
-                            <p>임시휴무 <i>2024-05-04</i></p>
-                            <p>임시휴무 <i>2024-05-04</i></p>
-                            <p>임시휴무 <i>2024-05-04</i></p>
+                            <div class="calendar">
+    
+                                <div>
+                                    <button><i class='bx bx-chevron-left'></i>이전달</button>
+                                    <strong>5월</strong>
+                                    <button><i class='bx bx-chevron-right' ></i>다음달</button>
+                                </div>
+    
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>일</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>3</span></td>
+                                            <td><span>4</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>5</span></td>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><span>8</span></td>
+                                            <td><span>9</span></td>
+                                            <td><span>10</span></td>
+                                            <td><span>11</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="off">12</span></td>
+                                            <td><span class="off">13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><span>17</span></td>
+                                            <td><span>18</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>19</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span class="today">24</span></td>
+                                            <td><span>25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>26</span></td>
+                                            <td><span>27</span></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+    
+                            </div>
+    
+                            <div class="schedule">
+                                <p>임시휴무 <i>2024-05-04</i></p>
+                                <p>임시휴무 <i>2024-05-04</i></p>
+                                <p>임시휴무 <i>2024-05-04</i></p>
+                                <p>임시휴무 <i>2024-05-04</i></p>
+                                <p>임시휴무 <i>2024-05-04</i></p>
+                            </div>
+
                         </div>
                     </div>
 

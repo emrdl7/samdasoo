@@ -390,55 +390,67 @@ http://scripts.sil.org/OFL
   font-family: "Pretendard";
   font-weight: 900;
   font-display: swap;
-  src: local("Pretendard Black"), url("./woff2/Pretendard-Black.woff2") format("woff2"), url("./woff/Pretendard-Black.woff") format("woff");
+  src: local("Pretendard Black"), url("../font/Pretendard-Black.woff2") format("woff2"), url("../font/Pretendard-Black.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 800;
   font-display: swap;
-  src: local("Pretendard ExtraBold"), url("./woff2/Pretendard-ExtraBold.woff2") format("woff2"), url("./woff/Pretendard-ExtraBold.woff") format("woff");
+  src: local("Pretendard ExtraBold"), url("../font/Pretendard-ExtraBold.woff2") format("woff2"), url("../font/Pretendard-ExtraBold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 700;
   font-display: swap;
-  src: local("Pretendard Bold"), url("./woff2/Pretendard-Bold.woff2") format("woff2"), url("./woff/Pretendard-Bold.woff") format("woff");
+  src: local("Pretendard Bold"), url("../font/Pretendard-Bold.woff2") format("woff2"), url("../font/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 600;
   font-display: swap;
-  src: local("Pretendard SemiBold"), url("./woff2/Pretendard-SemiBold.woff2") format("woff2"), url("./woff/Pretendard-SemiBold.woff") format("woff");
+  src: local("Pretendard SemiBold"), url("../font/Pretendard-SemiBold.woff2") format("woff2"), url("../font/Pretendard-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 500;
   font-display: swap;
-  src: local("Pretendard Medium"), url("./woff2/Pretendard-Medium.woff2") format("woff2"), url("./woff/Pretendard-Medium.woff") format("woff");
+  src: local("Pretendard Medium"), url("../font/Pretendard-Medium.woff2") format("woff2"), url("../font/Pretendard-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 400;
   font-display: swap;
-  src: local("Pretendard Regular"), url("./woff2/Pretendard-Regular.woff2") format("woff2"), url("./woff/Pretendard-Regular.woff") format("woff");
+  src: local("Pretendard Regular"), url("../font/Pretendard-Regular.woff2") format("woff2"), url("../font/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 300;
   font-display: swap;
-  src: local("Pretendard Light"), url("./woff2/Pretendard-Light.woff2") format("woff2"), url("./woff/Pretendard-Light.woff") format("woff");
+  src: local("Pretendard Light"), url("../font/Pretendard-Light.woff2") format("woff2"), url("../font/Pretendard-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 200;
   font-display: swap;
-  src: local("Pretendard ExtraLight"), url("./woff2/Pretendard-ExtraLight.woff2") format("woff2"), url("./woff/Pretendard-ExtraLight.woff") format("woff");
+  src: local("Pretendard ExtraLight"), url("../font/Pretendard-ExtraLight.woff2") format("woff2"), url("../font/Pretendard-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 100;
   font-display: swap;
-  src: local("Pretendard Thin"), url("./woff2/Pretendard-Thin.woff2") format("woff2"), url("./woff/Pretendard-Thin.woff") format("woff");
+  src: local("Pretendard Thin"), url("../font/Pretendard-Thin.woff2") format("woff2"), url("../font/Pretendard-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "JejuSamdasooBrand";
+  font-weight: 700;
+  font-display: swap;
+  src: local("JejuSamdasooBrand Bold"), url("../font/JejuSamdasooBrand-Bold.woff2") format("woff2"), url("../font/JejuSamdasooBrand-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "JejuSamdasooBrand";
+  font-weight: 800;
+  font-display: swap;
+  src: local("JejuSamdasooBrand Regular"), url("../font/JejuSamdasooBrand-Regular.woff2") format("woff2"), url("../font/JejuSamdasooBrand-Regular.woff") format("woff");
 }
 div#content.sub01 div.sub-head {
   background: #74C8FF;
@@ -1813,7 +1825,7 @@ div.input dl dd div.total-result {
 
 /* basic */
 html {
-  min-width: 360px;
+  min-width: 320px;
   max-width: 100%;
   font-size: 14px;
   height: -webkit-fill-available;
@@ -1923,7 +1935,7 @@ body header.on .container {
     bottom: 0;
     background: #1276C0;
     padding: 30px;
-    min-width: 360px;
+    min-width: 320px;
   }
   body nav#main-menu.on {
     display: block;
@@ -2190,6 +2202,393 @@ body div#content {
   body div#content {
     padding: 90px 0 40px;
   }
+}
+body div#content.main section.main-issue {
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  background: url(../images/background.png) no-repeat center/cover;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-issue {
+    height: 520px;
+  }
+}
+body div#content.main section.main-issue h3 {
+  font-family: "JejuSamdasooBrand";
+  font-weight: 700;
+  color: #1276C0;
+  line-height: 1.3;
+  margin: 100px 0 54px;
+  font-size: 36px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-issue h3 {
+    font-size: 50px;
+    margin: 120px 0 54px;
+  }
+}
+body div#content.main section.main-issue h3 span {
+  display: block;
+}
+body div#content.main section.main-issue h3 span u {
+  display: block;
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-issue h3 span u {
+    display: inline;
+  }
+}
+body div#content.main section.main-issue a {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #1276C0;
+  width: 240px;
+  line-height: 58px;
+  border-radius: 58px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1276C0;
+  background: rgba(255, 255, 255, 0.4);
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-issue a {
+    width: 340px;
+  }
+}
+body div#content.main section.order-list {
+  background: #EEEEEE;
+  padding: 30px 0;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.order-list {
+    padding: 50px 0;
+  }
+}
+body div#content.main section.order-list div.container h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.order-list div.container h3 {
+    font-size: 30px;
+    margin: 0 0 40px;
+  }
+}
+body div#content.main section.order-list div.container h3 a {
+  font-size: 0;
+  margin: 0 0 0 10px;
+}
+body div#content.main section.order-list div.container h3 a i {
+  font-size: 22px;
+  color: #808080;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.order-list div.container h3 a i {
+    font-size: 26px;
+  }
+}
+body div#content.main section.order-list div.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+body div#content.main section.order-list div.container ul li {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 1200px) {
+  body div#content.main section.order-list div.container ul li {
+    display: inline-block;
+    width: calc((100% - 116px) / 3) !important;
+    margin-left: 58px;
+  }
+}
+body div#content.main section.order-list div.container ul li:first-child {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.order-list div.container ul li:first-child {
+    margin-left: 0;
+  }
+}
+body div#content.main section.order-list div.container ul li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1276C0;
+  margin: 0 0 6px;
+}
+body div#content.main section.order-list div.container ul li a i {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+}
+body div#content.main section.order-list div.container ul li span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+body div#content.main section.order-list div.container ul li h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+body div#content.main section.order-list div.container ul li h4 small {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 6px 0 0;
+}
+body div#content.main section.order-list div.container ul li strong {
+  display: block;
+  margin: 20px -20px;
+  text-align: center;
+  color: #fff;
+  background: #777777;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+}
+body div#content.main section.order-list div.container ul li p {
+  font-size: 14px;
+  margin: 6px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body div#content.main section.order-list div.container ul li p.date {
+  color: #1276C0;
+  margin: 14px 0 0;
+}
+body div#content.main section.order-list div.container ul li p u {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 0 0 6px;
+}
+body div#content.main section.order-list div.container ul li.ok strong {
+  background: #1276C0;
+}
+body div#content.main section.main-contents {
+  padding: 40px 0 0;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents {
+    padding: 60px 0;
+  }
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container {
+    display: flex;
+  }
+}
+body div#content.main section.main-contents div.container h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container h3 {
+    font-size: 30px;
+  }
+}
+body div#content.main section.main-contents div.container h3 a {
+  font-size: 0;
+  margin: 0 0 0 10px;
+}
+body div#content.main section.main-contents div.container h3 a i {
+  font-size: 22px;
+  color: #808080;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container h3 a i {
+    font-size: 26px;
+  }
+}
+body div#content.main section.main-contents div.container h3 small {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+}
+body div#content.main section.main-contents div.container div.notice {
+  margin: 0 0 40px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.notice {
+    width: calc((100% - 116px) / 3);
+    margin: 0 58px 0 0;
+  }
+}
+body div#content.main section.main-contents div.container div.notice ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body div#content.main section.main-contents div.container div.notice ul li a {
+  display: block;
+  position: relative;
+  margin: 0 0 10px;
+  color: #666;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.notice ul li a {
+    padding: 0 100px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 34px;
+  }
+}
+body div#content.main section.main-contents div.container div.notice ul li a i {
+  display: block;
+  font-style: normal;
+  color: #999;
+  font-size: 14px;
+  margin: 6px 0 0;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.notice ul li a i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day {
+    width: 361.3333333333px;
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day div.off-outline {
+    display: flex;
+  }
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar {
+  position: relative;
+  border-top: 3px solid #F4F4F4;
+  border-bottom: 3px solid #F4F4F4;
+  padding-left: 128px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar {
+    display: inline-block;
+    width: 361.3333333333px;
+    flex-shrink: 0;
+    padding: 0 20px 0 128px;
+  }
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div strong {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0 6px;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font-size: 0;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div button i {
+  font-size: 30px;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table {
+  width: 100%;
+  text-align: center;
+  margin: 7px 0;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td {
+  padding: 16px 2px;
+  color: #808080;
+  position: relative;
+  font-size: 13px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th,
+  body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td {
+    padding: 14px 2px;
+  }
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.today,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.today {
+  background: #E4E4E4;
+  color: #222;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.off,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.off {
+  background: #FA6E3A;
+  color: #fff;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule {
+  display: inline-block;
+  width: 100%;
+  background: #F4F4F4;
+  padding: 20px 20px 10px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule {
+    flex-grow: 1;
+    padding: 20px 20px 4px;
+  }
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule p {
+  position: relative;
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: #2E2E2F;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule p {
+    font-size: 16px;
+    margin: 0 0 16px;
+  }
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule p i {
+  position: absolute;
+  font-weight: 400;
+  color: #808080;
+  right: 0;
+  font-style: normal;
 }
 body div#content.sub {
   background: #F4F4F4;
