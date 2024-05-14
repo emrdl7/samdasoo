@@ -4,6 +4,8 @@ $(function(){
     menu();
     outlink();
     mobileSubMenu();
+    unit();
+    plusminus();
 
 
     $(window).on("resize", function(){
@@ -76,6 +78,8 @@ function outlink() {
     });
 }
 
+
+/* ----- mobileSubMenu ----- */ 
 function mobileSubMenu() {
 
     $("aside a.on").on("click", function(e) {
@@ -87,4 +91,34 @@ function mobileSubMenu() {
 
         }
     });
+}
+
+
+/* ----- unit ----- */ 
+function unit() {
+
+    $(".order .unit input").change(function() {
+
+        $(".order .unit p").removeClass("on");
+        $(".order .unit p."+ $(this).attr("id")).addClass("on");
+        
+    });
+}
+
+
+/* ----- plusminus ----- */ 
+function plusminus() {
+
+    $(".order .number .plus").click(function(){
+        var currentValue = parseInt($(this).parent().find("input").val());
+        $(this).parent().find("input").val(currentValue + 1);
+    });
+
+    $(".order .number .minus").click(function(){
+        var currentValue = parseInt($(this).parent().find("input").val());
+        if (currentValue > 0) {
+            $(this).parent().find("input").val(currentValue - 1);
+        }
+    });
+
 }
