@@ -84,9 +84,6 @@
         <!-- S:subContent -->
         <div id="content" class="sub">
 
-
-            <!-- 서브 메뉴가 없는 화면은 aside 삭제할것 -->
-            <!-- 
             <aside>
                 <h3>마이페이지</h3>
 
@@ -103,33 +100,63 @@
                 </ul>
                 
             </aside>
-            -->
+           
 
 
-            <h4 class="stitle">주문완료</h4>
+            <h4 class="stitle">주문 취소 목록</h4>
 
             <section class="sub-contents">
                 <div class="container">
 
-                    <div class="result">
+                    <div class="order-list">
                         
-                        <h5>
-                            삼다수 주문이
-                            <span>완료되었습니다.</span>
-                            <small>담당자 확인 후 배송이 진행됩니다</small>
-                        </h5>
-                        
+                        <div class="order-filter">
+                            <strong>취소일자</strong>
+
+                            <p class="date start">
+                                <input type="text"><button><i class='bx bx-calendar' ></i>날짜선택</button>
+                            </p>
+
+                            <p class="date end">
+                                <u>~</u><input type="text"><button><i class='bx bx-calendar' ></i>날짜선택</button>
+                            </p>
+
+                            <div class="period">
+
+                                <input name="period" id="period01" type="radio" checked>
+                                <label for="period01">오늘</label>
+
+                                <input name="period" id="period02" type="radio">
+                                <label for="period02">1개월</label>
+
+                                <input name="period" id="period03" type="radio">
+                                <label for="period03">2개월</label>
+
+                                <input name="period" id="period04" type="radio">
+                                <label for="period04">3개월</label>
+
+                                <input name="period" id="period05" type="radio">
+                                <label for="period05">6개월</label>
+
+                            </div>
+
+                            <button class="submit">조회</button>
+                        </div>
+
+
                         <div class="info">
                             <div>
-
                                 <a href="">
                                     주문번호 #20240422000001 <i class='bx bx-chevron-right' ></i>
                                 </a>
-                                <span>주문일자 2024-04-19</span>
+                                <span>취소일자 2024-04-19</span>
                                 <h4>
                                     도내-2L 일반 외 1건
-                                    <small>총 10팩</small>
+                                    <small>총 취소 수량 10팩</small>
                                 </h4>
+
+                                
+                                <strong>취소완료</strong>
             
 
                             </div>
@@ -137,15 +164,70 @@
                             <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
         
                             <p class="date">납기일자 <u>2024-04-19</u></p>
-
                         </div>
 
+
+                        <div class="info">
+                            <div>
+                                <a href="">
+                                    주문번호 #20240422000001 <i class='bx bx-chevron-right' ></i>
+                                </a>
+                                <span>취소일자 2024-04-19</span>
+                                <h4>
+                                    도내-2L 일반 외 1건
+                                    <small>총 취소 수량 10팩</small>
+                                </h4>
+
+                                
+                                <strong>취소완료</strong>
+            
+
+                            </div>
+                            <p>납품처 <u>인포마인드</u></p>
+                            <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
+        
+                            <p class="date">납기일자 <u>2024-04-19</u></p>
+                        </div>
+
+
+                        <div class="info">
+                            <div>
+                                <a href="">
+                                    주문번호 #20240422000001 <i class='bx bx-chevron-right' ></i>
+                                </a>
+                                <span>취소일자 2024-04-19</span>
+                                <h4>
+                                    도내-2L 일반 외 1건
+                                    <small>총 취소 수량 10팩</small>
+                                </h4>
+
+                                
+                                <strong>취소완료</strong>
+            
+
+                            </div>
+                            <p>납품처 <u>인포마인드</u></p>
+                            <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
+        
+                            <p class="date">납기일자 <u>2024-04-19</u></p>
+                        </div>
+
+
+
+
+
+
                     </div>
+
+
+
+
+
                     
 
                     <div class="button-set">
-                        <a class="sub" href="">메인화면</a>
-                        <a class="main">마이페이지</a>
+                        <a class="sub" href="">이전</a>
+                        <a class="sub">다음</a>
                     </div>
                     
                 </div>

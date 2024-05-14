@@ -125,6 +125,7 @@ button {
 	text-align:center;
 	margin:34px auto 40px;
 	font-size:0;
+	white-space:nowrap;
 
 	@media (min-width: $screen-size-pc) {
 		margin:40px auto;
@@ -161,6 +162,19 @@ button {
 
 		&.main {
 			background:#1276C0;
+		}
+	}
+
+	&.three {
+
+		a,
+		button {
+			width:auto;
+			padding:0 15px ;
+
+			@media (min-width: $screen-size-pc) {
+				padding:0 55px;
+			}
 		}
 	}
 }
