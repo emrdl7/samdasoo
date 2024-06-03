@@ -2406,9 +2406,10 @@ body {
 
           p.date {
             margin:0 0 10px;
+            
 
             @media (min-width: $screen-size-pc) {
-              flex:1 1 184px;
+              flex:1 1 174px;
               margin:0;
             }
 
@@ -2437,6 +2438,11 @@ body {
             }
 
             &.end {
+
+              @media (min-width: $screen-size-pc) {
+                flex:1 1 214px
+              }
+              
               u {
                 display:inline-block;
                 vertical-align:top;
@@ -2457,7 +2463,7 @@ body {
             margin:30px 0 20px;
 
             @media (min-width: $screen-size-pc) {
-              margin:0 30px;
+              margin:0 20px;
               flex:1 1 260px;
             }
 

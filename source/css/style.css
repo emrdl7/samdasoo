@@ -2824,7 +2824,7 @@ body div#content.sub section.sub-contents div.order-filter p.date {
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order-filter p.date {
-    flex: 1 1 184px;
+    flex: 1 1 174px;
     margin: 0;
   }
 }
@@ -2849,6 +2849,11 @@ body div#content.sub section.sub-contents div.order-filter p.date button {
 body div#content.sub section.sub-contents div.order-filter p.date button i {
   font-size: 20px;
 }
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order-filter p.date.end {
+    flex: 1 1 214px;
+  }
+}
 body div#content.sub section.sub-contents div.order-filter p.date.end u {
   display: inline-block;
   vertical-align: top;
@@ -2866,7 +2871,7 @@ body div#content.sub section.sub-contents div.order-filter div.period {
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order-filter div.period {
-    margin: 0 30px;
+    margin: 0 20px;
     flex: 1 1 260px;
   }
 }
