@@ -3050,6 +3050,21 @@ body div#content.sub section.sub-contents div.order-list div.info.ok div strong 
 body div#content.sub section.sub-contents div.order-list div.info.ok p.date {
   color: #1276C0;
 }
+body div#content.sub section.sub-contents div.order-list div.empty {
+  font-size: 16px;
+  font-weight: 700;
+  color: #999;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 60px 10px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order-list div.empty {
+    padding: 100px 20px;
+    font-size: 24px;
+  }
+}
 body div#content.sub section.sub-contents div.statement {
   overflow-x: auto;
 }
