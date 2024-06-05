@@ -3386,6 +3386,14 @@ body div#content.sub section.board-list ul.list {
     border-bottom: 1px solid #ccc;
   }
 }
+body div#content.sub section.board-list ul.list li {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.board-list ul.list li {
+    height: 62px;
+  }
+}
 body div#content.sub section.board-list ul.list li a {
   display: block;
   position: relative;
@@ -3395,6 +3403,11 @@ body div#content.sub section.board-list ul.list li a {
 @media (min-width: 1200px) {
   body div#content.sub section.board-list ul.list li a {
     padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 62px;
   }
 }
 body div#content.sub section.board-list ul.list li a h4 {
@@ -3418,51 +3431,51 @@ body div#content.sub section.board-list ul.list li a h4 i.bx-paperclip {
   color: #1276C0;
   margin: 0 0 0 10px;
 }
-body div#content.sub section.board-list ul.list li a p {
+body div#content.sub section.board-list ul.list li p {
   margin: 0;
   position: relative;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li a p {
+  body div#content.sub section.board-list ul.list li p {
     position: absolute;
     font-size: 16px;
     top: 20px;
   }
 }
-body div#content.sub section.board-list ul.list li a p u {
+body div#content.sub section.board-list ul.list li p u {
   font-size: 14px;
   text-decoration: none;
 }
-body div#content.sub section.board-list ul.list li a p span {
+body div#content.sub section.board-list ul.list li p span {
   display: none;
 }
-body div#content.sub section.board-list ul.list li a p.num {
+body div#content.sub section.board-list ul.list li p.num {
   display: none;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li a p.num {
+  body div#content.sub section.board-list ul.list li p.num {
     display: block;
     left: 0;
     width: 80px;
     text-align: center;
   }
 }
-body div#content.sub section.board-list ul.list li a p.name {
+body div#content.sub section.board-list ul.list li p.name {
   display: none;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li a p.name {
+  body div#content.sub section.board-list ul.list li p.name {
     display: block;
     left: 1000px;
     width: 100px;
     text-align: center;
   }
 }
-body div#content.sub section.board-list ul.list li a p.date {
+body div#content.sub section.board-list ul.list li p.date {
   text-align: right;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li a p.date {
+  body div#content.sub section.board-list ul.list li p.date {
     display: block;
     left: 1100px;
     width: 100px;
@@ -3470,8 +3483,8 @@ body div#content.sub section.board-list ul.list li a p.date {
   }
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li:first-child a h4 span,
-  body div#content.sub section.board-list ul.list li:first-child a p span {
+  body div#content.sub section.board-list ul.list li:first-child h4 span,
+  body div#content.sub section.board-list ul.list li:first-child p span {
     display: block;
     width: 100%;
     position: absolute;

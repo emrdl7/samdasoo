@@ -3114,6 +3114,12 @@ body {
                 }
 
                 li {
+                  position:relative;
+
+                  @media (min-width: $screen-size-pc) {
+                    height:62px;
+                  }
+
                   a {
                     display: block;
                     position: relative;
@@ -3122,6 +3128,13 @@ body {
 
                     @media (min-width: $screen-size-pc) {
                       padding: 20px 0;
+                      
+                      position: absolute;
+                      
+                      left:0;
+                      right:0;
+                      bottom:0;
+                      height:62px;
                     }
 
                     h4 {
@@ -3134,6 +3147,7 @@ body {
                         font-size: 18px;
                         width: 900px;
                         margin: 0 320px 0 80px;
+                        
                       }
 
                       span {
@@ -3146,62 +3160,62 @@ body {
                         margin: 0 0 0 10px;
                       }
                     }
+                  }
 
-                    p {
-                      margin: 0;
-                      position: relative;
+
+                  p {
+                    margin: 0;
+                    position: relative;
+
+                    @media (min-width: $screen-size-pc) {
+                      position: absolute;
+                      font-size: 16px;
+                      top: 20px;
+                    }
+
+                    u {
+                      font-size: 14px;
+                      text-decoration: none;
+                    }
+
+                    span {
+                      display: none;
+                    }
+
+                    &.num {
+                      display: none;
 
                       @media (min-width: $screen-size-pc) {
-                        position: absolute;
-                        font-size: 16px;
-                        top: 20px;
+                        display: block;
+                        left: 0;
+                        width: 80px;
+                        text-align: center;
                       }
+                    }
+                    &.name {
+                      display: none;
 
-                      u {
-                        font-size: 14px;
-                        text-decoration: none;
+                      @media (min-width: $screen-size-pc) {
+                        display: block;
+                        left: 1000px;
+                        width: 100px;
+                        text-align: center;
                       }
+                    }
+                    &.date {
+                      text-align: right;
 
-                      span {
-                        display: none;
-                      }
-
-                      &.num {
-                        display: none;
-
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 0;
-                          width: 80px;
-                          text-align: center;
-                        }
-                      }
-                      &.name {
-                        display: none;
-
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 1000px;
-                          width: 100px;
-                          text-align: center;
-                        }
-                      }
-                      &.date {
-                        text-align: right;
-
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 1100px;
-                          width: 100px;
-                          text-align: center;
-                        }
+                      @media (min-width: $screen-size-pc) {
+                        display: block;
+                        left: 1100px;
+                        width: 100px;
+                        text-align: center;
                       }
                     }
                   }
-
                   @media (min-width: $screen-size-pc) {
                     &:first-child {
-                      a {
+
                         h4,
                         p {
                           span {
@@ -3214,7 +3228,6 @@ body {
                             font-weight: 600;
                           }
                         }
-                      }
                     }
                   }
 
