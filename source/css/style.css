@@ -3505,7 +3505,7 @@ body div#content.sub section.board-list ul.list li.notice h4 {
     padding-left: 0;
   }
 }
-body div#content.sub section.board-list ul.list li.notice a p.num {
+body div#content.sub section.board-list ul.list li.notice p.num {
   display: block;
   text-align: center;
   position: absolute;
@@ -3514,13 +3514,13 @@ body div#content.sub section.board-list ul.list li.notice a p.num {
   padding: 2px 0;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li.notice a p.num {
+  body div#content.sub section.board-list ul.list li.notice p.num {
     display: inline-block;
     left: 0;
     top: 20px;
   }
 }
-body div#content.sub section.board-list ul.list li.notice a p.num u {
+body div#content.sub section.board-list ul.list li.notice p.num u {
   display: block;
   background: #1276C0;
   width: 50px;
@@ -3528,7 +3528,7 @@ body div#content.sub section.board-list ul.list li.notice a p.num u {
   color: #fff;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-list ul.list li.notice a p.num u {
+  body div#content.sub section.board-list ul.list li.notice p.num u {
     padding: 5px 0;
     margin: -5px 15px 0;
     top: 0;
