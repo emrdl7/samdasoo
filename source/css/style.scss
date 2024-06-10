@@ -3115,44 +3115,37 @@ body {
 
                 li {
                   position:relative;
+                  padding: 10px 0;
+                  border-bottom: 1px solid #ccc;
 
                   @media (min-width: $screen-size-pc) {
                     height:62px;
+                    padding: 20px 0;
+                    
                   }
 
-                  a {
-                    display: block;
+
+
+                  h4 {
                     position: relative;
-                    padding: 10px 0;
-                    border-bottom: 1px solid #ccc;
+                    font-size: 16px;
+                    margin: 0;
+                     font-weight: 400;
 
                     @media (min-width: $screen-size-pc) {
-                      padding: 20px 0;
-                      
-                      position: absolute;
-                      
-                      left:0;
-                      right:0;
-                      bottom:0;
-                      height:62px;
+                      font-size: 18px;
+                      width: 900px;
+                      margin: 0 320px 0 80px;
+                        
                     }
 
-                    h4 {
-                      font-size: 16px;
-                      margin: 0;
-                      font-weight: 400;
+                    span {
+                      display: none;
+                    }
 
-                      @media (min-width: $screen-size-pc) {
-                        position: relative;
-                        font-size: 18px;
-                        width: 900px;
-                        margin: 0 320px 0 80px;
-                        
-                      }
 
-                      span {
-                        display: none;
-                      }
+                    a {
+                      display:block;
 
                       i.bx-paperclip {
                         transform: rotate(-45deg);
