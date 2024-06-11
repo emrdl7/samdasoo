@@ -3,6 +3,29 @@ $min-width: 320px;
 $img-url: "../images";
 $screen-size-pc: 1200px;
 
+.nowLoading {
+	position:fixed;
+	z-index:10000;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,0.4);
+	text-align:center;
+
+	span {
+		display:block;
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translateY(-50%) translateX(-50%);
+	}
+	i {
+		font-size:180px;
+		color:#fff;
+	}
+}
+
 .pagenation {
 	display: inline-block;
 	text-align: center;

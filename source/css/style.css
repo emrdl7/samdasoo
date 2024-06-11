@@ -488,6 +488,28 @@ div#content.sub05 div.sub-head.fix {
 }
 
 /* basic */
+.nowLoading {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.nowLoading span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.nowLoading i {
+  font-size: 180px;
+  color: #fff;
+}
+
 .pagenation {
   display: inline-block;
   text-align: center;
@@ -1751,6 +1773,129 @@ body div#content.sub section.sub-contents.login div.container div.login p.info-t
 body div#content.sub section.sub-contents.login div.container div.login p.info-text span {
   display: block;
 }
+body div#content.sub section.sub-contents.login div.container div.joinResult {
+  font-size: 0;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult h5 {
+  text-align: center;
+  margin: 0 0 70px;
+  color: #1276C0;
+  font-size: 38px;
+  font-weight: 800;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult h5 {
+    font-size: 52px;
+    background-size: 430px auto;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult h5 span {
+  display: block;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult h5 span {
+    display: inline;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult h5 small {
+  display: block;
+  color: #222;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 0;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info {
+  position: relative;
+  border: 1px solid #ccc;
+  background: #eee;
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult div.info {
+    padding: 30px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div {
+  padding: 20px;
+  margin: -20px -20px 20px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult div.info div {
+    padding: 30px;
+    margin: -30px -30px 30px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1276C0;
+  margin: 0 0 6px;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div a i {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult div.info div span {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info div h4 small {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 6px 0 0;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info p {
+  font-size: 14px;
+  margin: 6px 0 0;
+  word-break: keep-all;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult div.info p {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info p.date {
+  color: #1276C0;
+  margin: 14px 0 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents.login div.container div.joinResult div.info p.date {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info p u {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 0 0 6px;
+}
+body div#content.sub section.sub-contents.login div.container div.joinResult div.info.ok strong {
+  background: #1276C0;
+}
 body div#content.sub section.sub-contents.sign div.container div.box {
   max-width: 710px;
   margin: 0 auto;
@@ -2179,6 +2324,11 @@ body div#content.sub section.sub-contents div.order div.input-box textarea:-moz-
 body div#content.sub section.sub-contents div.order div.input-box textarea:read-only {
   background: #f4f4f4;
 }
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order div.input-box p.date {
+    width: calc(50% - 10px);
+  }
+}
 body div#content.sub section.sub-contents div.order div.input-box p.date input {
   width: calc(100% - 58px);
   margin: 0 10px 0 0;
@@ -2203,12 +2353,12 @@ body div#content.sub section.sub-contents div.order div.input-box p.find {
   }
 }
 body div#content.sub section.sub-contents div.order div.input-box p.find input {
-  width: calc(100% - 102px);
+  width: calc(100% - 112px);
   margin-right: 10px;
 }
 body div#content.sub section.sub-contents div.order div.input-box p.find button {
   vertical-align: top;
-  width: 90px;
+  width: 100px;
   height: 46px;
   border: 1px solid #2E2E2F;
   background: #2E2E2F;

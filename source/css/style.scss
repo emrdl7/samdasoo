@@ -1183,7 +1183,161 @@ body {
                 }
               }
             }
+
+
+            div.joinResult {
+              font-size:0;
+    
+              h5 {
+                text-align:center;
+                margin:0 0 70px;
+                color:#1276C0;
+                font-size:38px;
+                font-weight:800;
+                @media (min-width: $screen-size-pc) {
+                  font-size:52px;
+                  background-size:430px auto;
+                }
+    
+                span {
+                  display:block;
+    
+                  @media (min-width: $screen-size-pc) {
+                    display:inline;
+                  }
+                }
+    
+                small {
+                  display:block;
+                  color:#222;
+                  font-size:20px;
+                  font-weight:700;
+                  margin:20px 0 0;
+                }
+              }
+    
+    
+    
+              div.info {
+                position:relative;
+                border:1px solid #ccc;
+                background:#eee;
+                padding:20px;
+    
+    
+                @media (min-width: $screen-size-pc) {
+                  padding:30px;
+                }
+    
+                div {
+                  padding:20px;
+                  margin:-20px -20px 20px;
+                  border-bottom:1px solid #ccc;
+                  background:#fff;
+              
+                  @include drop-shadow(
+                    $x: 0,
+                    $y: 3px,
+                    $blur: 13px,
+                    $spread: 0,
+                    $alpha: 0.1
+                  );
+    
+    
+                  @media (min-width: $screen-size-pc) {
+                    padding:30px;
+                    margin:-30px -30px 30px;
+                  }
             
+    
+                  a {
+                    display:block;
+                    font-size:16px;
+                    font-weight:700;
+                    color:#1276C0;
+                    margin:0 0 6px;
+      
+                    i {
+                      display:inline-block;
+                      vertical-align:bottom;
+                      font-size:20px;
+                      margin:0 0 0 4px;
+                    }
+                  }
+                  
+                  span {
+                    display:block;
+                    font-size:14px;
+                    font-weight:500;
+                    margin:0 0 18px;
+    
+    
+                    @media (min-width: $screen-size-pc) {
+                      position:absolute;
+                      right:30px;
+                      top:30px;
+                    }
+              
+                  }
+      
+                  h4 {
+                    margin:0;
+                    font-size:22px;
+                    font-weight:700;
+                    
+                    small {
+                      display:block;
+                      font-weight:500;
+                      font-size:16px;
+                      margin:6px 0 0;
+                    }
+                  }
+    
+    
+                }
+    
+    
+                p {
+                  font-size:14px;
+                  margin:6px 0 0;
+                  word-break:keep-all;
+                  // white-space:nowrap;
+                  // overflow:hidden;
+                  // text-overflow:ellipsis;
+    
+                  @media (min-width: $screen-size-pc) {
+                    display:inline-block;
+                    font-size:16px;
+                    margin:0 20px 0 0;
+                  }
+            
+    
+                  &.date {
+                    color:#1276C0;
+                    margin:14px 0 0;
+    
+    
+                    @media (min-width: $screen-size-pc) {
+                      position:absolute;
+                      right:30px;
+                      bottom:30px;
+                    }
+                  }
+    
+                  u {
+                    text-decoration:none;
+                    font-weight:700;
+                    padding:0 0 0 6px;
+                  }
+                }
+    
+                &.ok {
+                  strong {
+                    background:#1276C0;
+                  }
+                }
+              }
+            }  
   
   
           }
@@ -1666,6 +1820,10 @@ body {
 
             p.date {
 
+              @media (min-width: $screen-size-pc) {
+                width:calc(50% - 10px);
+              }
+
               input {
                 width:calc(100% - 58px);
                 margin:0 10px 0 0;
@@ -1694,13 +1852,13 @@ body {
               }
 
               input {
-                width:calc(100% - 102px);
+                width:calc(100% - 112px);
                 margin-right:10px;
               }
 
               button {
                 vertical-align:top;
-                width:90px;
+                width:100px;
                 height:46px;
                 border:1px solid #2E2E2F;
                 background:#2E2E2F;
