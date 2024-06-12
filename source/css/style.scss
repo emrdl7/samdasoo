@@ -788,7 +788,7 @@ body {
 
                 &.empty {
                   background:#eee;
-                  line-height:203.5px;
+                  line-height:234px;
                   text-align:center;
                   font-weight:700;
                   color:#777;
@@ -824,12 +824,14 @@ body {
                   width:calc((1200px - 116px) / 3);
                   flex-shrink:0;
                   padding:0 20px 0 128px;
+                  min-height:234px;
                 }
   
-                div {
+                &>div {
                   position:absolute;
                   left:0;
                   top:20px;
+                  bottom:20px;
   
                   strong {
                     display:inline-block;
@@ -849,6 +851,31 @@ body {
   
                     i {
                       font-size:30px;
+                    }
+                  }
+
+                  div.legend {
+                    position:absolute;
+                    left:0;
+                    bottom:0;
+
+                    p {
+                      font-size:13px;
+                      margin:6px 0 0;
+                      white-space:nowrap;
+                      color:#fff;
+                      padding:2px 12px;
+                      border-radius:100px;
+
+                      &.ton {
+                        background:#4572c2;
+                      }
+                      &.large {
+                        background:#FA6E3A;
+                      }
+                      &.all {
+                        background:#777;
+                      }
                     }
                   }
                 }
@@ -882,13 +909,24 @@ body {
                         border-radius:50%;
   
                         &.today {
-                          background:#E4E4E4;
+                          background:#f4f4f4;
                           color:#222;
+                          font-weight:700;
                         }
   
                         &.off {
-                          background:#FA6E3A;
                           color:#fff;
+
+
+                          &.ton {
+                            background:#4572c2;
+                          }
+                          &.large {
+                            background:#FA6E3A;
+                          }
+                          &.all {
+                            background:#777;
+                          }
                         }
   
                       }
@@ -907,6 +945,8 @@ body {
                 @media (min-width: $screen-size-pc) {
                   flex-grow:1;
                   padding:20px 20px 4px;
+                  height:234px;
+                  overflow-y:auto;
                 }
 
                 p {
