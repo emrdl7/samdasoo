@@ -1024,7 +1024,7 @@ body header.on .container {
     left: 50%;
     transform: translateX(-50%);
     top: 40px;
-    width: 120px;
+    width: 130px;
     list-style: none;
     padding: 20px 20px 10px;
     background: #253039;
@@ -1426,7 +1426,7 @@ body div#content.main section.main-contents div.container div.notice ul li a i {
 }
 body div#content.main section.main-contents div.container div.notice ul li.empty {
   background: #eee;
-  line-height: 203.5px;
+  line-height: 234px;
   text-align: center;
   font-weight: 700;
   color: #777;
@@ -1455,14 +1455,16 @@ body div#content.main section.main-contents div.container div.off-day div.off-ou
     width: 361.3333333333px;
     flex-shrink: 0;
     padding: 0 20px 0 128px;
+    min-height: 234px;
   }
 }
-body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div {
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div {
   position: absolute;
   left: 0;
   top: 20px;
+  bottom: 20px;
 }
-body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div strong {
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div strong {
   display: inline-block;
   position: relative;
   top: -3px;
@@ -1470,15 +1472,37 @@ body div#content.main section.main-contents div.container div.off-day div.off-ou
   font-weight: 900;
   padding: 0 6px;
 }
-body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div button {
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div button {
   padding: 0;
   margin: 0;
   border: none;
   background: transparent;
   font-size: 0;
 }
-body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar div button i {
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div button i {
   font-size: 30px;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div div.legend {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div div.legend p {
+  font-size: 13px;
+  margin: 6px 0 0;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 100px;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div div.legend p.ton {
+  background: #4572c2;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div div.legend p.large {
+  background: #FA6E3A;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar > div div.legend p.all {
+  background: #777;
 }
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table {
   width: 100%;
@@ -1511,13 +1535,25 @@ body div#content.main section.main-contents div.container div.off-day div.off-ou
 }
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.today,
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.today {
-  background: #E4E4E4;
+  background: #f4f4f4;
   color: #222;
+  font-weight: 700;
 }
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.off,
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.off {
-  background: #FA6E3A;
   color: #fff;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.off.ton,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.off.ton {
+  background: #4572c2;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.off.large,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.off.large {
+  background: #FA6E3A;
+}
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr th span.off.all,
+body div#content.main section.main-contents div.container div.off-day div.off-outline div.calendar table tr td span.off.all {
+  background: #777;
 }
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule {
   display: inline-block;
@@ -1529,6 +1565,8 @@ body div#content.main section.main-contents div.container div.off-day div.off-ou
   body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule {
     flex-grow: 1;
     padding: 20px 20px 4px;
+    height: 234px;
+    overflow-y: auto;
   }
 }
 body div#content.main section.main-contents div.container div.off-day div.off-outline div.schedule p {
