@@ -2620,6 +2620,9 @@ body div#content.sub section.sub-contents div.order-detail div.input-box.info p 
   margin: 0 0 10px;
   font-size: 14px;
   font-weight: 500;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order-detail div.input-box.info p {
@@ -3766,15 +3769,25 @@ body div#content.sub section.board-view {
     padding: 50px 0;
   }
 }
-body div#content.sub section.board-view div.board-box {
+@media (max-width: 1200px) {
+  body div#content.sub section.board-view div.container {
+    padding: 0;
+  }
+}
+body div#content.sub section.board-view div.container div.board-box {
   background: #fff;
 }
+@media (max-width: 1200px) {
+  body div#content.sub section.board-view div.container div.board-box {
+    padding: 0 15px;
+  }
+}
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box {
+  body div#content.sub section.board-view div.container div.board-box {
     border-top: 2px solid #3d3d3d;
   }
 }
-body div#content.sub section.board-view div.board-box h4 {
+body div#content.sub section.board-view div.container div.board-box h4 {
   font-size: 16px;
   margin: 0;
   padding: 14px 0;
@@ -3782,12 +3795,12 @@ body div#content.sub section.board-view div.board-box h4 {
   word-break: keep-all;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box h4 {
+  body div#content.sub section.board-view div.container div.board-box h4 {
     padding: 0;
     line-height: 60px;
     font-size: 18px;
   }
-  body div#content.sub section.board-view div.board-box h4::before {
+  body div#content.sub section.board-view div.container div.board-box h4::before {
     content: "제목";
     display: inline-block;
     width: 146px;
@@ -3798,42 +3811,42 @@ body div#content.sub section.board-view div.board-box h4 {
     margin-right: 20px;
   }
 }
-body div#content.sub section.board-view div.board-box ul.info {
+body div#content.sub section.board-view div.container div.board-box ul.info {
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none;
   border-bottom: 1px solid #dfdfdf;
 }
-body div#content.sub section.board-view div.board-box ul.info li {
+body div#content.sub section.board-view div.container div.board-box ul.info li {
   display: inline-block;
   padding: 14px 10px 14px 0;
   font-size: 14px;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box ul.info li {
+  body div#content.sub section.board-view div.container div.board-box ul.info li {
     font-size: 0;
     padding: 0;
     border-right: 1px solid #dfdfdf;
   }
-  body div#content.sub section.board-view div.board-box ul.info li:last-child {
+  body div#content.sub section.board-view div.container div.board-box ul.info li:last-child, body div#content.sub section.board-view div.container div.board-box ul.info li.name {
     border: none;
   }
-  body div#content.sub section.board-view div.board-box ul.info li:first-child {
+  body div#content.sub section.board-view div.container div.board-box ul.info li:first-child {
     width: 100%;
     border-bottom: 1px solid #dfdfdf;
   }
 }
-body div#content.sub section.board-view div.board-box ul.info li.count {
+body div#content.sub section.board-view div.container div.board-box ul.info li.count {
   display: none;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box ul.info li.count {
+  body div#content.sub section.board-view div.container div.board-box ul.info li.count {
     display: inline-block;
   }
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box ul.info li span {
+  body div#content.sub section.board-view div.container div.board-box ul.info li span {
     display: inline-block;
     width: 146px;
     background: #fafafa;
@@ -3843,19 +3856,19 @@ body div#content.sub section.board-view div.board-box ul.info li.count {
     font-weight: 600;
   }
 }
-body div#content.sub section.board-view div.board-box ul.info li u {
+body div#content.sub section.board-view div.container div.board-box ul.info li u {
   text-decoration: none;
 }
-body div#content.sub section.board-view div.board-box ul.info li u::before {
+body div#content.sub section.board-view div.container div.board-box ul.info li u::before {
   content: ": ";
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box ul.info li u::before {
+  body div#content.sub section.board-view div.container div.board-box ul.info li u::before {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-box ul.info li u {
+  body div#content.sub section.board-view div.container div.board-box ul.info li u {
     display: inline-block;
     border-left: 1px solid #dfdfdf;
     font-size: 16px;
@@ -3864,11 +3877,11 @@ body div#content.sub section.board-view div.board-box ul.info li u::before {
     font-weight: 600;
   }
 }
-body div#content.sub section.board-view hr {
+body div#content.sub section.board-view div.container hr {
   display: none;
 }
-body div#content.sub section.board-view ul.file,
-body div#content.sub section.board-view ul.link {
+body div#content.sub section.board-view div.container ul.file,
+body div#content.sub section.board-view div.container ul.link {
   position: relative;
   background: #fff;
   margin: 0;
@@ -3876,14 +3889,20 @@ body div#content.sub section.board-view ul.link {
   list-style: none;
   border-bottom: 1px solid #dfdfdf;
 }
+@media (max-width: 1200px) {
+  body div#content.sub section.board-view div.container ul.file,
+  body div#content.sub section.board-view div.container ul.link {
+    padding: 15px;
+  }
+}
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view ul.file,
-  body div#content.sub section.board-view ul.link {
+  body div#content.sub section.board-view div.container ul.file,
+  body div#content.sub section.board-view div.container ul.link {
     padding: 20px 0 20px 196px;
     font-size: 16px;
   }
-  body div#content.sub section.board-view ul.file::before,
-  body div#content.sub section.board-view ul.link::before {
+  body div#content.sub section.board-view div.container ul.file::before,
+  body div#content.sub section.board-view div.container ul.link::before {
     content: "첨부파일";
     display: flex;
     align-items: center;
@@ -3900,32 +3919,37 @@ body div#content.sub section.board-view ul.link {
     margin-right: 20px;
   }
 }
-body div#content.sub section.board-view ul.file.link::before,
-body div#content.sub section.board-view ul.link.link::before {
+body div#content.sub section.board-view div.container ul.file.link::before,
+body div#content.sub section.board-view div.container ul.link.link::before {
   content: "링크";
 }
-body div#content.sub section.board-view ul.file li a,
-body div#content.sub section.board-view ul.link li a {
+body div#content.sub section.board-view div.container ul.file li a,
+body div#content.sub section.board-view div.container ul.link li a {
   color: #1c7cc2;
   text-decoration: underline;
 }
-body div#content.sub section.board-view div.board-text {
+body div#content.sub section.board-view div.container div.board-text {
   padding: 20px 0;
   border-bottom: 1px solid #dfdfdf;
   background: #fff;
 }
+@media (max-width: 1200px) {
+  body div#content.sub section.board-view div.container div.board-text {
+    padding: 15px;
+  }
+}
 @media (min-width: 1200px) {
-  body div#content.sub section.board-view div.board-text {
+  body div#content.sub section.board-view div.container div.board-text {
     padding: 40px;
   }
 }
-body div#content.sub section.board-view div.board-text p {
+body div#content.sub section.board-view div.container div.board-text p {
   margin: 0;
 }
-body div#content.sub section.board-view div.board-text p.image {
+body div#content.sub section.board-view div.container div.board-text p.image {
   text-align: center;
 }
-body div#content.sub section.board-view div.board-text img {
+body div#content.sub section.board-view div.container div.board-text img {
   max-width: 100%;
 }
 body footer#footer {

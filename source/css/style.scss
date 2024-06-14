@@ -2151,6 +2151,9 @@ body {
                 margin:0 0 10px;
                 font-size:14px;
                 font-weight:500;
+                word-break:keep-all;
+                overflow:hidden;
+                text-overflow:ellipsis;
   
                 @media (min-width: $screen-size-pc) {
                   font-size:16px;
@@ -3558,179 +3561,204 @@ body {
                 padding:50px 0;
               }
 
+              div.container {
 
-              div.board-box {
-                background:#fff;
-                
-                @media (min-width: $screen-size-pc) {
-                  border-top: 2px solid #3d3d3d;
+      
+                @media (max-width: $screen-size-pc) {
+                  padding:0;
                 }
 
-                h4 {
-                  font-size: 16px;
-                  margin: 0;
-                  padding: 14px 0;
-                  border-bottom: 1px solid #dfdfdf;
-                  word-break: keep-all;
 
-                  @media (min-width: $screen-size-pc) {
-                    padding: 0;
-                    line-height: 60px;
-                    font-size: 18px;
+                div.board-box {
+                  background:#fff;
 
-                    &::before {
-                      content: "제목";
-                      display: inline-block;
-                      width: 146px;
-                      background: #fafafa;
-                      font-size: 17px;
-                      text-align: center;
-                      border-right: 1px solid #dfdfdf;
-                      margin-right: 20px;
-                    }
+      
+                  @media (max-width: $screen-size-pc) {
+                    padding:0 15px;
                   }
-                }
-
-                ul.info {
-                  margin: 0;
-                  padding: 0;
-                  font-size: 0;
-                  list-style: none;
-                  border-bottom: 1px solid #dfdfdf;
-
-                  li {
-                    display: inline-block;
-                    padding: 14px 10px 14px 0;
-                    font-size: 14px;
-
+                  
+                  @media (min-width: $screen-size-pc) {
+                    border-top: 2px solid #3d3d3d;
+                  }
+  
+                  h4 {
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 14px 0;
+                    border-bottom: 1px solid #dfdfdf;
+                    word-break: keep-all;
+  
                     @media (min-width: $screen-size-pc) {
-                      font-size: 0;
                       padding: 0;
-                      border-right: 1px solid #dfdfdf;
-
-                      &:last-child {
-                        border: none;
-                      }
-
-                      &:first-child {
-                        width: 100%;
-                        border-bottom: 1px solid #dfdfdf;
-                      }
-                    }
-
-                    &.count {
-                      display: none;
-
-                      @media (min-width: $screen-size-pc) {
-                        display: inline-block;
-                      }
-                    }
-
-                    span {
-                      @media (min-width: $screen-size-pc) {
+                      line-height: 60px;
+                      font-size: 18px;
+  
+                      &::before {
+                        content: "제목";
                         display: inline-block;
                         width: 146px;
                         background: #fafafa;
                         font-size: 17px;
                         text-align: center;
-                        line-height: 60px;
-                        font-weight: 600;
+                        border-right: 1px solid #dfdfdf;
+                        margin-right: 20px;
                       }
                     }
-
-                    u {
-                      text-decoration: none;
-
-                      &::before {
-                        content: ": ";
-
-                        @media (min-width: $screen-size-pc) {
-                          display: none;
+                  }
+  
+                  ul.info {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 0;
+                    list-style: none;
+                    border-bottom: 1px solid #dfdfdf;
+  
+                    li {
+                      display: inline-block;
+                      padding: 14px 10px 14px 0;
+                      font-size: 14px;
+  
+                      @media (min-width: $screen-size-pc) {
+                        font-size: 0;
+                        padding: 0;
+                        border-right: 1px solid #dfdfdf;
+  
+                        &:last-child,
+                        &.name {
+                          border: none;
+                        }
+  
+                        &:first-child {
+                          width: 100%;
+                          border-bottom: 1px solid #dfdfdf;
                         }
                       }
-
-                      @media (min-width: $screen-size-pc) {
-                        display: inline-block;
-                        border-left: 1px solid #dfdfdf;
-                        font-size: 16px;
-                        padding: 0 34px 0 20px;
-                        line-height: 60px;
-                        font-weight: 600;
+  
+                      &.count {
+                        display: none;
+  
+                        @media (min-width: $screen-size-pc) {
+                          display: inline-block;
+                        }
+                      }
+  
+                      span {
+                        @media (min-width: $screen-size-pc) {
+                          display: inline-block;
+                          width: 146px;
+                          background: #fafafa;
+                          font-size: 17px;
+                          text-align: center;
+                          line-height: 60px;
+                          font-weight: 600;
+                        }
+                      }
+  
+                      u {
+                        text-decoration: none;
+  
+                        &::before {
+                          content: ": ";
+  
+                          @media (min-width: $screen-size-pc) {
+                            display: none;
+                          }
+                        }
+  
+                        @media (min-width: $screen-size-pc) {
+                          display: inline-block;
+                          border-left: 1px solid #dfdfdf;
+                          font-size: 16px;
+                          padding: 0 34px 0 20px;
+                          line-height: 60px;
+                          font-weight: 600;
+                        }
                       }
                     }
                   }
                 }
-              }
-
-              hr {
-                display: none;
-              }
-
-              ul.file,
-              ul.link {
-                position: relative;
-                background:#fff;
-                margin: 0;
-                padding: 14px 0;
-                list-style: none;
-                border-bottom: 1px solid #dfdfdf;
-
-                @media (min-width: $screen-size-pc) {
-                  padding: 20px 0 20px 196px;
-                  font-size: 16px;
-
-                  &::before {
-                    content: "첨부파일";
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    font-weight: 600;
-                    left: 0;
-                    top: 0;
-                    bottom: 0;
-                    width: 146px;
-                    background: #fafafa;
-                    font-size: 17px;
-                    border-right: 1px solid #dfdfdf;
-                    margin-right: 20px;
-                  }
+  
+                hr {
+                  display: none;
                 }
-
-                &.link {
-                  &::before {
-                    content: "링크";
-                  }
-                }
-
-                li {
-                  a {
-                    color: #1c7cc2;
-                    text-decoration: underline;
-                  }
-                }
-              }
-
-              div.board-text {
-                padding: 20px 0;
-                border-bottom: 1px solid #dfdfdf;
-                background:#fff;
-
-                @media (min-width: $screen-size-pc) {
-                  padding: 40px;
-                }
-
-                p {
+  
+                ul.file,
+                ul.link {
+                  position: relative;
+                  background:#fff;
                   margin: 0;
+                  padding: 14px 0;
+                  list-style: none;
+                  border-bottom: 1px solid #dfdfdf;
 
-                  &.image {
-                    text-align: center;
+      
+                  @media (max-width: $screen-size-pc) {
+                    padding:15px;
+                  }
+  
+                  @media (min-width: $screen-size-pc) {
+                    padding: 20px 0 20px 196px;
+                    font-size: 16px;
+  
+                    &::before {
+                      content: "첨부파일";
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: absolute;
+                      font-weight: 600;
+                      left: 0;
+                      top: 0;
+                      bottom: 0;
+                      width: 146px;
+                      background: #fafafa;
+                      font-size: 17px;
+                      border-right: 1px solid #dfdfdf;
+                      margin-right: 20px;
+                    }
+                  }
+  
+                  &.link {
+                    &::before {
+                      content: "링크";
+                    }
+                  }
+  
+                  li {
+                    a {
+                      color: #1c7cc2;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+  
+                div.board-text {
+                  padding: 20px 0;
+                  border-bottom: 1px solid #dfdfdf;
+                  background:#fff;
+
+      
+                  @media (max-width: $screen-size-pc) {
+                    padding:15px;
+                  }
+  
+                  @media (min-width: $screen-size-pc) {
+                    padding: 40px;
+                  }
+  
+                  p {
+                    margin: 0;
+  
+                    &.image {
+                      text-align: center;
+                    }
+                  }
+  
+                  img {
+                    max-width: 100%;
                   }
                 }
 
-                img {
-                  max-width: 100%;
-                }
               }
             }
 
