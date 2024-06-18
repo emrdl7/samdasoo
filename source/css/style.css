@@ -3305,12 +3305,18 @@ body div#content.sub section.sub-contents div.statement table tbody tr:nth-child
 }
 body div#content.sub section.sub-contents div.statement table tbody tr td {
   text-align: center;
-  padding: 20px 2px;
+  padding: 20px 10px;
   background: #fff;
   font-size: 14px;
   font-weight: 400;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+body div#content.sub section.sub-contents div.statement table tbody tr td.left {
+  text-align: left;
+}
+body div#content.sub section.sub-contents div.statement table tbody tr td.right {
+  text-align: right;
 }
 body div#content.sub section.sub-contents div.statement table tbody tr td:last-of-type {
   border-right: none;

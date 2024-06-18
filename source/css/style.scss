@@ -2998,12 +2998,20 @@ body {
 
                 td {
                   text-align:center;
-                  padding:20px 2px;
+                  padding:20px 10px;
                   background:#fff;
                   font-size:14px;
                   font-weight:400;
                   border-right:1px solid #ccc;
                   border-bottom:1px solid #ccc;
+
+                  &.left {
+                    text-align:left;
+                  }
+
+                  &.right {
+                    text-align:right;
+                  }
 
                   &:last-of-type {
                     border-right:none;
