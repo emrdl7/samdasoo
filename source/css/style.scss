@@ -682,6 +682,12 @@ body {
                   background:#1276C0;
                 }
               }
+
+              &.ing {
+                strong {
+                  background:#8DA016;
+                }
+              }
             }
           }
         }
@@ -1376,6 +1382,14 @@ body {
                     background:#1276C0;
                   }
                 }
+    
+                &.ing {
+                  strong {
+                    background:#8DA016;
+                  }
+                }
+
+                
               }
             }  
   
@@ -2437,6 +2451,12 @@ body {
                 background:#1276C0;
               }
             }
+
+            &.ing {
+              strong {
+                background:#8DA016;
+              }
+            }
           }
         }
 
@@ -2617,6 +2637,12 @@ body {
             &.ok {
               strong {
                 background:#1276C0;
+              }
+            }
+
+            &.ing {
+              strong {
+                background:#8DA016;
               }
             }
           }
@@ -2937,6 +2963,26 @@ body {
                 color:#1276C0;
               }
             }
+
+            &.ing {
+              color:#222;
+
+              div {
+                a {
+                  color:#8DA016;
+                }
+
+                strong {
+                  background:#8DA016;
+                }
+
+              }
+
+              p.date {
+                color:#8DA016;
+              }
+            }
+
           }
 
           div.empty {
@@ -2958,6 +3004,46 @@ body {
         div.statement {
           overflow-x:auto;
 
+          ul.summary {
+            background:#eee;
+            border:1px solid #ccc;
+            padding:20px 20px 10px;
+            font-size:0;
+            text-align:center;
+            margin:0 0 20px;
+
+
+            @media (min-width: $screen-size-pc) {
+              // text-align:left;
+            }
+
+            p {
+              display:inline-block;
+              font-size:14px;
+              margin:0 0 10px;
+              width:50%;
+              border-right:1px solid #ccc;
+
+              &:nth-child(even) {
+                border:none;
+              }
+
+
+              @media (min-width: $screen-size-pc) {
+                border:none;
+                width:auto;
+                margin-right:20px;
+                font-size:16px;
+              }
+
+              u {
+                text-decoration:none;
+                font-weight:700;
+                color:#1276C0;
+              }
+            }
+          }
+
 
           table {
             width:100%;
@@ -2970,7 +3056,7 @@ body {
 
                 th {
                   text-align:center;
-                  padding:15px 2px;
+                  padding:15px 10px;
                   background:#555;
                   color:#fff;
                   font-size:14px;
@@ -2981,6 +3067,11 @@ body {
                   &:last-of-type {
                     border-right:none;
                   }
+
+
+                  span {
+                    display:block;
+                  }
                 }
 
               }
@@ -2990,11 +3081,11 @@ body {
 
               tr {
 
-                &:nth-child(even) {
-                  td {
-                    background:#f4f4f4;
-                  }
-                }
+                // &:nth-child(even) {
+                //   td {
+                //     background:#f4f4f4;
+                //   }
+                // }
 
                 td {
                   text-align:center;
@@ -3022,6 +3113,11 @@ body {
                     color:#1276C0;
                   }
 
+                  &.ing {
+                    font-weight:700;
+                    color:#8DA016;
+                  }
+
                   &.empty {
                     padding:120px 10px;
                     background:#eee;
@@ -3029,6 +3125,10 @@ body {
                     font-size:16px;
                     font-weight:700;
                     color:#999;
+                  }
+
+                  span {
+                    display:block;
                   }
                 }
 
@@ -3195,6 +3295,12 @@ body {
             &.ok {
               strong {
                 background:#1276C0;
+              }
+            }
+
+            &.ing {
+              strong {
+                background:#8DA016;
               }
             }
           }
