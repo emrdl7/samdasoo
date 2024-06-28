@@ -3306,36 +3306,40 @@ body div#content.sub section.sub-contents div.order-list div.empty {
 body div#content.sub section.sub-contents div.statement {
   overflow-x: auto;
 }
-body div#content.sub section.sub-contents div.statement ul.summary {
+body div#content.sub section.sub-contents div.statement div.summary {
   background: #eee;
   border: 1px solid #ccc;
   padding: 20px 20px 10px;
   font-size: 0;
-  text-align: center;
   margin: 0 0 20px;
 }
-body div#content.sub section.sub-contents div.statement ul.summary p {
-  display: inline-block;
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.statement div.summary {
+    text-align: center;
+  }
+}
+body div#content.sub section.sub-contents div.statement div.summary p {
   font-size: 14px;
   margin: 0 0 10px;
-  width: 50%;
-  border-right: 1px solid #ccc;
-}
-body div#content.sub section.sub-contents div.statement ul.summary p:nth-child(even) {
-  border: none;
 }
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.statement ul.summary p {
-    border: none;
+  body div#content.sub section.sub-contents div.statement div.summary p {
+    display: inline-block;
     width: auto;
     margin-right: 20px;
     font-size: 16px;
   }
 }
-body div#content.sub section.sub-contents div.statement ul.summary p u {
+body div#content.sub section.sub-contents div.statement div.summary p u {
+  display: block;
   text-decoration: none;
   font-weight: 700;
   color: #1276C0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.statement div.summary p u {
+    display: inline;
+  }
 }
 body div#content.sub section.sub-contents div.statement table {
   width: 100%;

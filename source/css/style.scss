@@ -3004,42 +3004,39 @@ body {
         div.statement {
           overflow-x:auto;
 
-          ul.summary {
+          div.summary {
             background:#eee;
             border:1px solid #ccc;
             padding:20px 20px 10px;
             font-size:0;
-            text-align:center;
             margin:0 0 20px;
 
 
             @media (min-width: $screen-size-pc) {
-              // text-align:left;
+              text-align:center;
             }
 
             p {
-              display:inline-block;
               font-size:14px;
               margin:0 0 10px;
-              width:50%;
-              border-right:1px solid #ccc;
-
-              &:nth-child(even) {
-                border:none;
-              }
-
 
               @media (min-width: $screen-size-pc) {
-                border:none;
+                display:inline-block;
                 width:auto;
                 margin-right:20px;
                 font-size:16px;
               }
 
               u {
+                display:block;
                 text-decoration:none;
                 font-weight:700;
                 color:#1276C0;
+
+
+                @media (min-width: $screen-size-pc) {
+                  display:inline;
+                }
               }
             }
           }
