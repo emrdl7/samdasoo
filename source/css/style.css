@@ -2312,7 +2312,7 @@ body div#content.sub section.sub-contents div.order div.total > span {
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order div.total > span {
-    margin: 20px auto;
+    margin: 20px auto 0;
     width: 500px;
     font-size: 22px;
   }
