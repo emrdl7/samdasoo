@@ -56,7 +56,7 @@
                         <h3><a href="">공지사항</a></h3>
                     </li>
                     <li>
-                        <h3><a href="">주문내역</a></h3>
+                        <h3><a href="">마이페이지</a></h3>
                         <ul>
                             <li>
                                 <a href="">주문조회</a>
@@ -66,6 +66,9 @@
                             </li>
                             <li>
                                 <a href="">거래명세서</a>
+                            </li>
+                            <li>
+                                <a href="">내 정보 관리</a>
                             </li>
                         </ul>
                     </li>
@@ -84,15 +87,12 @@
         <!-- S:subContent -->
         <div id="content" class="sub">
 
-
-            <!-- 서브 메뉴가 없는 화면은 aside 삭제할것 -->
-            <!-- 
             <aside>
                 <h3>마이페이지</h3>
 
                 <ul>
                     <li>
-                        <a class="on" href="">주문조회</a>
+                        <a href="">주문조회</a>
                     </li>
                     <li>
                         <a href="">주문취소내역</a>
@@ -100,62 +100,61 @@
                     <li>
                         <a href="">거래명세서</a>
                     </li>
+                    <li>
+                        <a class="on" href="">내정보관리</a>
+                    </li>
                 </ul>
                 
             </aside>
-            -->
+           
 
 
-            <h4 class="stitle">주문완료</h4>
+            <h4 class="stitle">주문목록</h4>
 
             <section class="sub-contents">
                 <div class="container">
 
-                    <div class="result">
-                        
-                        <h5>
-                            삼다수 주문이
-                            <span>완료되었습니다.</span>
-                            <small>담당자 확인 후 배송이 진행됩니다</small>
-                        </h5>
 
-                        <div class="text">
-
-                            <p>선입금 대상 거래처는 입금 확인 후에 주문이 확정됩니다.</p>
-                            <p>(계좌번호 : <strong>농협 317-0010-0648-31</strong>, 예금주 : 제주특별자치도개발공사)</p>
-                            <p>카드결제를 원하시는 분은 <strong>064-780-3494</strong>로 연락주시기 바랍니다.</p>
-                        </div>
-                        
-                        <div class="info">
-                            <div>
-
-                                <a href="">
-                                    주문번호 #20240422000001 <i class='bx bx-chevron-right' ></i>
-                                </a>
-                                <span>주문일자 2024-04-19</span>
-                                <h4>
-                                    도내-2L 일반 외 1건
-                                    <small>총 10팩</small>
-                                </h4>
-
-                                <span class="total">주문금액(합계) : <u>₩5,285,120</u></span>
-            
-
-                            </div>
-                            <p>납품처 <u>인포마인드</u></p>
-                            <p>제주특별자치도 제주시 서광로 192 (삼도일동, 4층)</p>
-        
-                            <p class="date">납기일자 <u>2024-04-19</u></p>
-
-                        </div>
-
-                    </div>
                     
 
-                    <div class="button-set">
-                        <a class="sub" href="">메인화면</a>
-                        <a class="main">마이페이지</a>
+
+                    <div class="my-box">
+                        <fieldset>
+                            <legend>회원정보</legend>
+
+
+                            <h5>회원정보</h5>
+
+                            <label for="idInput">로그인 ID</label>
+                            <input id="idInput" type="text" value="emart01" readonly>
+
+                            <label for="name">사용자명</label>
+                            <input id="name" type="text" value="홍길동" readonly>
+
+                            <label for="company">회사명</label>
+                            <input id="company" type="text" value="이마트제주" readonly>
+
+
+                            <label for="pwInputOld">기존비밀번호</label>
+                            <input id="pwInputOld" type="password">
+
+
+                            <label for="pwInput">신규 비밀번호 <u>영문, 숫자, 특수문자 조합 (9~20자리)</u></label>
+                            <input id="pwInput" type="password">
+
+                            <label for="reInput">신규 비밀번호 확인 <u>영문, 숫자, 특수문자 조합 (9~20자리)</u></label>
+                            <input id="reInput" type="password">
+
+                        </fieldset>
+
                     </div>
+
+
+                    <div class="button-set">
+                        <button class="main">변경하기</button>
+                    </div>
+
+
                     
                 </div>
             </section>

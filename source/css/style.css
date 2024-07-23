@@ -2185,14 +2185,14 @@ body div#content.sub section.sub-contents div.order ul.number li {
   border-top: none;
   background: #fff;
   padding: 20px 20px 20px 140px;
-  min-height: 140px;
+  min-height: 160px;
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order ul.number li {
     flex: 1 1 33.333%;
     border-right: none;
     padding: 30px 30px 30px 160px;
-    min-height: 160px;
+    min-height: 170px;
   }
 }
 body div#content.sub section.sub-contents div.order ul.number li img {
@@ -2216,6 +2216,12 @@ body div#content.sub section.sub-contents div.order ul.number li strong span {
   display: block;
   font-size: 16px;
   font-weight: 500;
+}
+body div#content.sub section.sub-contents div.order ul.number li > span {
+  display: block;
+  margin: 10px 0 20px;
+  font-size: 16px;
+  color: #666;
 }
 body div#content.sub section.sub-contents div.order ul.number li p {
   position: absolute;
@@ -2294,6 +2300,21 @@ body div#content.sub section.sub-contents div.order div.total p {
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.order div.total p {
     font-size: 18px;
+  }
+}
+body div#content.sub section.sub-contents div.order div.total > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order div.total > span {
+    margin: 20px auto;
+    width: 500px;
+    font-size: 22px;
   }
 }
 body div#content.sub section.sub-contents div.order div.input-box {
@@ -2769,6 +2790,22 @@ body div#content.sub section.sub-contents div.result h5 small {
   font-weight: 700;
   margin: 20px 0 0;
 }
+body div#content.sub section.sub-contents div.result div.text {
+  background: #e4e4e4;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 20px 10px;
+  margin: 0 0 20px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.result div.text {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.sub-contents div.result div.text p {
+  word-break: keep-all;
+  margin: 0 0 10px;
+}
 body div#content.sub section.sub-contents div.result div.info {
   position: relative;
   border: 1px solid #ccc;
@@ -2781,6 +2818,7 @@ body div#content.sub section.sub-contents div.result div.info {
   }
 }
 body div#content.sub section.sub-contents div.result div.info div {
+  position: relative;
   padding: 20px;
   margin: -20px -20px 20px;
   border-bottom: 1px solid #ccc;
@@ -2818,6 +2856,23 @@ body div#content.sub section.sub-contents div.result div.info div span {
     right: 30px;
     top: 30px;
   }
+}
+body div#content.sub section.sub-contents div.result div.info div span.total {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.result div.info div span.total {
+    top: auto;
+    bottom: 30px;
+    font-size: 20px;
+  }
+}
+body div#content.sub section.sub-contents div.result div.info div span.total u {
+  text-decoration: none;
+  color: #1276C0;
 }
 body div#content.sub section.sub-contents div.result div.info div h4 {
   margin: 0;
@@ -3529,6 +3584,111 @@ body div#content.sub section.sub-contents div.error div.info.ok strong {
 body div#content.sub section.sub-contents div.error div.info.ing strong {
   background: #8DA016;
 }
+body div#content.sub section.sub-contents div.my-box {
+  margin: 0 auto;
+  border-bottom: 1px solid #E4E4E4;
+}
+body div#content.sub section.sub-contents div.my-box fieldset {
+  margin: 0;
+  border: 1px solid #E4E4E4;
+  background: #fff;
+  padding: 30px 30px 10px;
+  border-bottom: none;
+  font-size: 0;
+}
+body div#content.sub section.sub-contents div.my-box fieldset legend {
+  display: none;
+}
+body div#content.sub section.sub-contents div.my-box fieldset h5 {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+body div#content.sub section.sub-contents div.my-box fieldset label {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+body div#content.sub section.sub-contents div.my-box fieldset label u {
+  display: block;
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #1276C0;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.my-box fieldset label u {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+  }
+}
+body div#content.sub section.sub-contents div.my-box fieldset input[type=text],
+body div#content.sub section.sub-contents div.my-box fieldset input[type=password] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 0 20px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.my-box fieldset input[type=text],
+  body div#content.sub section.sub-contents div.my-box fieldset input[type=password] {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.sub-contents div.my-box fieldset input[type=text].wbtn,
+body div#content.sub section.sub-contents div.my-box fieldset input[type=password].wbtn {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 102px);
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.my-box fieldset input[type=text].wbtn,
+  body div#content.sub section.sub-contents div.my-box fieldset input[type=password].wbtn {
+    width: calc(100% - 142px);
+  }
+}
+body div#content.sub section.sub-contents div.my-box fieldset input[type=text]:-moz-read-only, body div#content.sub section.sub-contents div.my-box fieldset input[type=password]:-moz-read-only {
+  background: #F4F4F4;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents div.my-box fieldset input[type=text]:read-only,
+body div#content.sub section.sub-contents div.my-box fieldset input[type=password]:read-only {
+  background: #F4F4F4;
+  font-weight: 700;
+}
+body div#content.sub section.sub-contents div.my-box fieldset button.check {
+  display: block;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background: #2E2E2F;
+  color: #fff;
+}
+body div#content.sub section.sub-contents div.my-box fieldset button.check.winput {
+  display: inline-block;
+  vertical-align: top;
+  width: 92px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.my-box fieldset button.check.winput {
+    width: 132px;
+  }
+}
 @media (min-width: 1200px) {
   body div#content.sub aside + h4 + section.sub-contents div.container {
     padding-left: 280px;
@@ -4103,21 +4263,12 @@ body footer#footer div.container address {
   }
 }
 body footer#footer div.container address p {
-  margin: 0;
-}
-@media (min-width: 1200px) {
-  body footer#footer div.container address p {
-    display: inline-block;
-    margin-right: 14px;
-  }
-}
-body footer#footer div.container address p:first-of-type {
   margin: 0 0 20px;
 }
 @media (min-width: 1200px) {
-  body footer#footer div.container address p:first-of-type {
-    margin: 0;
+  body footer#footer div.container address p {
     display: block;
+    margin: 0;
   }
 }
 body footer#footer div.container address p span {
@@ -4126,6 +4277,7 @@ body footer#footer div.container address p span {
 @media (min-width: 1200px) {
   body footer#footer div.container address p span {
     display: inline;
+    margin-right: 14px;
   }
 }
 body footer#footer div.container p.copyright {
