@@ -26,6 +26,55 @@ $screen-size-pc: 1200px;
 	}
 }
 
+div.status {
+	width:320px;
+	height:128px;
+	margin:0 auto 40px;
+	font-size:0;
+	margin:30px auto 0;
+
+	&.step1 {
+		background:url(../images/step1.svg) no-repeat center / 100% auto;
+	}
+
+	&.step2 {
+		background:url(../images/step2.svg) no-repeat center / 100% auto;
+	}
+
+	&.step3 {
+		background:url(../images/step3.svg) no-repeat center / 100% auto;
+	}
+
+	&.step4 {
+		background:url(../images/step4.svg) no-repeat center / 100% auto;
+	}
+                
+	@media (min-width: $screen-size-pc) {
+		width:540px;
+		height:210px;
+		margin-bottom:60px;
+	} 
+}
+
+
+div.result-text {
+	background:#e4e4e4;
+	font-size:14px;
+	text-align:center;
+	padding:20px 20px 10px;
+	margin:0 0 20px;
+
+
+	@media (min-width: $screen-size-pc) {
+	  font-size:16px;
+	}
+
+	p {
+	  word-break:keep-all;
+	  margin:0 0 10px;
+	}
+  }
+
 .pagenation {
 	display: inline-block;
 	text-align: center;

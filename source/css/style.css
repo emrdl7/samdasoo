@@ -510,6 +510,50 @@ div#content.sub05 div.sub-head.fix {
   color: #fff;
 }
 
+div.status {
+  width: 320px;
+  height: 128px;
+  margin: 0 auto 40px;
+  font-size: 0;
+  margin: 30px auto 0;
+}
+div.status.step1 {
+  background: url(../images/step1.svg) no-repeat center/100% auto;
+}
+div.status.step2 {
+  background: url(../images/step2.svg) no-repeat center/100% auto;
+}
+div.status.step3 {
+  background: url(../images/step3.svg) no-repeat center/100% auto;
+}
+div.status.step4 {
+  background: url(../images/step4.svg) no-repeat center/100% auto;
+}
+@media (min-width: 1200px) {
+  div.status {
+    width: 540px;
+    height: 210px;
+    margin-bottom: 60px;
+  }
+}
+
+div.result-text {
+  background: #e4e4e4;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 20px 10px;
+  margin: 0 0 20px;
+}
+@media (min-width: 1200px) {
+  div.result-text {
+    font-size: 16px;
+  }
+}
+div.result-text p {
+  word-break: keep-all;
+  margin: 0 0 10px;
+}
+
 .pagenation {
   display: inline-block;
   text-align: center;
@@ -2761,18 +2805,14 @@ body div#content.sub section.sub-contents div.result {
 }
 body div#content.sub section.sub-contents div.result h5 {
   text-align: center;
-  margin: 0 0 70px;
+  margin: 0 0 30px;
   color: #1276C0;
   font-size: 38px;
   font-weight: 800;
-  height: 340px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='429.5' height='177.666' viewBox='0 0 429.5 177.666'%3E%3Cg id='그룹_372' data-name='그룹 372' transform='translate(-475.5 -486.99)'%3E%3Cpath id='bxs-package' d='M81.972,25.772a3.84,3.84,0,0,0-.116-.856c-.028-.1-.084-.2-.12-.3a4.192,4.192,0,0,0-.28-.66c-.064-.108-.152-.2-.228-.3a3.96,3.96,0,0,0-.408-.52c-.092-.088-.212-.16-.312-.244a4.062,4.062,0,0,0-.48-.376c-.016-.012-.036-.012-.056-.024l-.032-.024L44.024,2.512a4.008,4.008,0,0,0-3.88,0L4.06,22.468a.219.219,0,0,1-.044.04l-.04.016a4.31,4.31,0,0,0-.376.292,4.272,4.272,0,0,0-.424.328,3.959,3.959,0,0,0-.316.408,3.928,3.928,0,0,0-.316.416,3.8,3.8,0,0,0-.236.556,2.706,2.706,0,0,0-.164.4,3.9,3.9,0,0,0-.116.84c0,.068-.028.128-.028.2V57.972a4,4,0,0,0,2.06,3.5L39.972,81.416l0,0,.008,0,.08.044a3.9,3.9,0,0,0,.54.216,3.272,3.272,0,0,0,.388.156,4.052,4.052,0,0,0,2.024,0,3.927,3.927,0,0,0,.388-.156,3.455,3.455,0,0,0,.54-.216l.08-.044.008,0,0,0L79.948,61.468A4,4,0,0,0,82,57.972V25.964c0-.068-.024-.124-.028-.192ZM41.888,41.46,14.232,25.992,25.28,19.88,52.616,35.5Zm.192-30.876L69.764,25.972,60.788,30.96,33.468,15.348ZM46,71.176l.008-22.716L58,41.748V53.972l8-4v-12.7L74,32.8v22.82L46,71.176Z' transform='translate(473.5 484.981)'/%3E%3Cpath id='패스_847' data-name='패스 847' d='M-16.02-5.544H-30.636v1.8h6.156V1.62h2.232V-3.744h6.228Zm-13.9-2.7.828,1.764c2.79-.378,4.788-1.584,5.76-3.24.954,1.656,2.97,2.862,5.8,3.24l.792-1.764C-20-8.622-21.762-10.206-22-11.772h4.644v-1.764H-29.3v1.764h4.644C-24.894-10.206-26.676-8.622-29.916-8.244ZM-.468-6.48H-15.084v1.8h6.372v2.736H-6.48V-4.68H-.468ZM-13.392,1.332h11.3v-1.8h-9.036V-3.312h-2.268Zm.108-9.108H-2.34v-5.9H-13.284Zm2.2-1.764v-2.412h6.552V-9.54Zm16.38-4.176c-2.358,0-4.032,1.314-4.032,3.24A3.28,3.28,0,0,0,4.176-7.344v1.26c-1.35.054-2.628.072-3.744.072L.648-4.248A58.23,58.23,0,0,0,10.3-4.9l-.18-1.656c-1.17.18-2.412.288-3.672.36v-1.17a3.291,3.291,0,0,0,2.88-3.114C9.306-12.4,7.632-13.716,5.292-13.716ZM2.556,1.332H13.824v-1.8H4.788V-3.24H2.556Zm.792-11.808c-.018-1.008.81-1.548,1.944-1.548,1.152,0,1.908.54,1.908,1.548,0,.972-.756,1.548-1.908,1.548C4.158-8.928,3.33-9.5,3.348-10.476ZM11.016-2.16h2.232V-7.452H15.3V-9.324H13.248v-5.04H11.016Zm19.656.144h-3.6V-4.464H29.34v-1.8h-9.4V-8.028H28.98v-5.328h-11.3v1.8h9.072v1.728H17.712v5.364h2.052v2.448H16.02V-.18H30.672Zm-8.712,0V-4.464h2.916v2.448Z' transform='translate(516 663)' fill='%23222'/%3E%3Cpath id='패스_848' data-name='패스 848' d='M-16.02-5.544H-30.636v1.8h6.156V1.62h2.232V-3.744h6.228Zm-13.9-2.7.828,1.764c2.79-.378,4.788-1.584,5.76-3.24.954,1.656,2.97,2.862,5.8,3.24l.792-1.764C-20-8.622-21.762-10.206-22-11.772h4.644v-1.764H-29.3v1.764h4.644C-24.894-10.206-26.676-8.622-29.916-8.244ZM-.468-6.48H-15.084v1.8h6.372v2.736H-6.48V-4.68H-.468ZM-13.392,1.332h11.3v-1.8h-9.036V-3.312h-2.268Zm.108-9.108H-2.34v-5.9H-13.284Zm2.2-1.764v-2.412h6.552V-9.54Zm24.336-4.824H11.016V-3.492h2.232V-7.956H15.3V-9.792H13.248ZM.288-5.544.54-3.816a57.237,57.237,0,0,0,9.9-.648l-.18-1.512c-1.224.144-2.538.252-3.852.306v-.81C8.118-6.732,9.2-7.6,9.216-8.82,9.2-10.3,7.65-11.2,5.292-11.2c-2.376,0-3.924.9-3.924,2.376,0,1.224,1.08,2.088,2.808,2.34v.9C2.79-5.544,1.458-5.544.288-5.544ZM.72-11.556H9.864v-1.656H6.408v-1.3H4.176v1.3H.72ZM2.34-1.116h8.676V1.62h2.232V-2.844H2.34Zm1.188-7.7c-.018-.612.63-.882,1.764-.9,1.116.018,1.764.288,1.764.9,0,.594-.648.936-1.764.936C4.158-7.884,3.51-8.226,3.528-8.82ZM29.52-14.4H27.288v3.924h-2.52v1.8h2.52V-4.9H29.52ZM15.912-6.66,17.1-4.86a6.371,6.371,0,0,0,3.852-3.6,6.111,6.111,0,0,0,3.672,3.168L25.74-7.056a4.94,4.94,0,0,1-3.672-4.572h3.168v-1.8H16.56v1.8H19.8A5.334,5.334,0,0,1,15.912-6.66ZM18.54-1.44c0,1.944,2.088,3.078,5.508,3.1,3.42-.018,5.508-1.152,5.508-3.1s-2.088-3.078-5.508-3.1C20.628-4.518,18.54-3.384,18.54-1.44Zm2.232,0c0-.918,1.152-1.386,3.276-1.368,2.124-.018,3.276.45,3.276,1.368S26.172-.072,24.048-.072,20.772-.522,20.772-1.44Z' transform='translate(700 663)' fill='%23999'/%3E%3Cpath id='패스_849' data-name='패스 849' d='M-12.528-12.96h-2.088v10.8h6.372v-10.8h-2.088v3.6h-2.2Zm0,9V-7.6h2.2V-3.96ZM-6.912.864h2.124V-6.444h1.44V1.62h2.124V-14.4H-3.348v6.12h-1.44v-5.868H-6.912ZM8.856-8.712H6.624v1.98H.468v1.764H15.084V-6.732H8.856ZM1.224-9.5l.792,1.728c2.718-.4,4.7-1.548,5.706-3.132,1.008,1.6,3.006,2.736,5.706,3.132L14.292-9.5c-3.618-.45-5.4-2.214-5.4-4.068v-.54h-2.3v.54C6.606-11.79,4.77-9.954,1.224-9.5Zm.936,8.28C2.142.612,4.248,1.62,7.74,1.62S13.3.612,13.32-1.224C13.3-3.042,11.232-4.068,7.74-4.068S2.142-3.042,2.16-1.224Zm2.268,0C4.41-2.016,5.508-2.358,7.74-2.376c2.2.018,3.33.36,3.348,1.152C11.07-.432,9.936-.054,7.74-.072,5.508-.054,4.41-.432,4.428-1.224Z' transform='translate(886 663)' fill='%23999'/%3E%3Cline id='선_19' data-name='선 19' x2='369' transform='translate(515.5 606.5)' fill='none' stroke='%23ccc' stroke-width='10'/%3E%3Ccircle id='타원_1' data-name='타원 1' cx='19.5' cy='19.5' r='19.5' transform='translate(496 587)' fill='%232e2e2f'/%3E%3Ccircle id='타원_2' data-name='타원 2' cx='19.5' cy='19.5' r='19.5' transform='translate(681 587)' fill='%23ccc'/%3E%3Ccircle id='타원_3' data-name='타원 3' cx='19.5' cy='19.5' r='19.5' transform='translate(866 587)' fill='%23ccc'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center bottom/280px auto;
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.result h5 {
     font-size: 52px;
-    height: 360px;
-    background-size: 430px auto;
   }
 }
 body div#content.sub section.sub-contents div.result h5 span {
@@ -2789,22 +2829,6 @@ body div#content.sub section.sub-contents div.result h5 small {
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0 0;
-}
-body div#content.sub section.sub-contents div.result div.text {
-  background: #e4e4e4;
-  font-size: 14px;
-  text-align: center;
-  padding: 20px 20px 10px;
-  margin: 0 0 20px;
-}
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.result div.text {
-    font-size: 16px;
-  }
-}
-body div#content.sub section.sub-contents div.result div.text p {
-  word-break: keep-all;
-  margin: 0 0 10px;
 }
 body div#content.sub section.sub-contents div.result div.info {
   position: relative;
@@ -2912,6 +2936,36 @@ body div#content.sub section.sub-contents div.result div.info p u {
   text-decoration: none;
   font-weight: 700;
   padding: 0 0 0 6px;
+}
+body div#content.sub section.sub-contents div.result div.info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.result div.info span {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+}
+body div#content.sub section.sub-contents div.result div.info span.total {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.result div.info span.total {
+    top: auto;
+    bottom: 30px;
+    font-size: 20px;
+  }
+}
+body div#content.sub section.sub-contents div.result div.info span.total u {
+  text-decoration: none;
+  color: #1276C0;
 }
 body div#content.sub section.sub-contents div.result div.info.ok strong {
   background: #1276C0;
@@ -3258,6 +3312,24 @@ body div#content.sub section.sub-contents div.order-list div.info div span {
     right: 30px;
     top: 30px;
   }
+}
+body div#content.sub section.sub-contents div.order-list div.info div span.total {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0 0;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order-list div.info div span.total {
+    top: auto;
+    bottom: 40px;
+    font-size: 20px;
+    right: 220px;
+  }
+}
+body div#content.sub section.sub-contents div.order-list div.info div span.total u {
+  text-decoration: none;
+  color: #1276C0;
 }
 body div#content.sub section.sub-contents div.order-list div.info div h4 {
   margin: 0;
