@@ -2646,6 +2646,21 @@ body div#content.sub section.sub-contents div.order-detail div.total p {
     font-size: 18px;
   }
 }
+body div#content.sub section.sub-contents div.order-detail div.total > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ccc;
+}
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.order-detail div.total > span {
+    margin: 20px auto 0;
+    width: 500px;
+    font-size: 22px;
+  }
+}
 body div#content.sub section.sub-contents div.order-detail div.input-box {
   background: #fff;
   border: 1px solid #ccc;

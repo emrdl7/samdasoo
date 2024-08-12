@@ -2142,6 +2142,22 @@ body {
               }
             }
 
+
+            &>span {
+              display:block;
+              font-size:20px;
+              font-weight:700;
+              margin:20px 0 0;
+              padding:20px 0 0;
+              border-top:1px solid #ccc;
+
+              @media (min-width: $screen-size-pc) {
+                margin:20px auto 0;
+                width:500px;
+                font-size:22px;
+  
+              }
+            }
           }
 
           div.input-box {
